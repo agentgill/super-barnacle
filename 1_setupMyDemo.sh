@@ -9,7 +9,7 @@ rm -rf force-app/main/default/permissionsets
 rm -rf force-app/main/default/tabs
 
 echo "Creating scratch org against a devhub org with alais devhub0 (change to own)"
-sfdx force:org:create -f config/project-scratch-def.json -s -a demo -d 1 -v devhub0 -w 10
+sfdx force:org:create -f config/project-scratch-def.json -s -a demo -d 1 -v devhub -w 10
 
 echo "Creating a Demo Billing Custom Oject in Salesforce..."
 sfdx shane:object:create -a billing_usage__c -l "Billing Usage" -p "Billing Usage" -t custom --autonumberformat={0000} --enterprise --nametype=AutoNumber
