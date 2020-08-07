@@ -1,5 +1,9 @@
 #!/usr/bin/env bash
 
+set -e
+
+sfdx force:org:create -f config/project-scratch-def.json -s -a demo -d 30 -v devhub0 -w 10
+
 echo "Create a Azure Billing Oject in salesforce..."
 sfdx shane:object:create -a billing_usage__c -l "Billing Usage" -p "Billing Usage" -t custom --autonumberformat={0000} --enterprise --nametype=AutoNumber
 sfdx force:source:push
