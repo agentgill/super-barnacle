@@ -20,4 +20,8 @@ String csvString = cv.VersionData.tostring();
 // Parse as List
 List<List<String>> data = RT_CSVReader.read(csvString);
 
-System.debug('Wow is that my data parsed? ' + data.size());
+System.debug('Wow how many rows? ' + data.size());
+
+for (List<String> row : data){
+  System.debug('Here it is each '+row);
+}

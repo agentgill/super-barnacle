@@ -3,7 +3,7 @@
 ContentDocumentLink cdl = [
   SELECT Id, ContentDocumentId
   FROM ContentDocumentLink
-  WHERE LinkedEntityId = 'a002500000B77AMAAZ'
+  WHERE LinkedEntityId = 'a0054000003tR8cAAE'
 ];
 
 // Get Content VersionData
@@ -20,4 +20,8 @@ String csvString = cv.VersionData.tostring();
 // Parse as List
 List<List<String>> data = RT_CSVReader.read(csvString);
 
-System.debug('Wow is that my data parsed? ' + data.size());
+System.debug('Wow how many rows? ' + data.size());
+
+for (List<String> row : data){
+  System.debug('Here it is each '+row);
+}
