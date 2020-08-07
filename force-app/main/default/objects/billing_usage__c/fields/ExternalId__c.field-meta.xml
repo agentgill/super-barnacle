@@ -1,7 +1,0 @@
-<?xml version="1.0" encoding="UTF-8"?>
-<CustomField>
-    <label>External Id</label>
-    <type>Text</type>
-    <fullName>ExternalId__c</fullName>
-    <length>255</length>
-</CustomField>
