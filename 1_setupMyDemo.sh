@@ -8,7 +8,7 @@ rm -rf force-app/main/default/objects
 rm -rf force-app/main/default/permissionsets
 rm -rf force-app/main/default/tabs
 
-echo "Creating scratch org against a devhub org with alais devhub0 (change to own)"
+echo "Creating scratch org against a devhub org with alais devhub (change to own)"
 sfdx force:org:create -f config/project-scratch-def.json -s -a demo -d 1 -v devhub -w 10
 
 echo "Creating a Demo Billing Custom Oject in Salesforce..."
