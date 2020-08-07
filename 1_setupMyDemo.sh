@@ -1,6 +1,5 @@
 #!/usr/bin/env bash
 
-
 echo "Create a Azure Billing Oject in salesforce..."
 sfdx shane:object:create -a billing_usage__c -l "Billing Usage" -p "Billing Usage" -t custom --autonumberformat={0000} --enterprise --nametype=AutoNumber
 sfdx force:source:push
